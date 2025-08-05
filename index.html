@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="no-referrer">
+  <title>Harihar Singh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header.hero {
+      background: none;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .overlay {
+      background-color: rgba(30, 136, 229, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 20px;
+      display: inline-block;
+      border: 1px solid rgba(30, 136, 229, 0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #fff;
+      background: linear-gradient(135deg, #1e88e5, #42a5f5);
+      padding: 4px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    .profile-img:hover {
+      transform: scale(1.08) rotate(1deg);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.4);
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+      color: #1e88e5;
+    }
+    header p, #typing {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      color: #333;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #1e88e5;
+      margin-bottom: 1rem;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .skill-card {
+      background: #f5faff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      text-align: center;
+      transition: 0.3s ease;
+    }
+    .skill-card:hover {
+      background: #e3f2fd;
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .social-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #1e88e5;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    .social-btn:hover {
+      background: #1565c0;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      transform: scale(1.05);
+    }
+    .social-icons {
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #1e88e5;
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .social-icons img {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e88e5;
+      color: white;
+      margin-top: 2rem;
+    }
+    a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero" data-aos="fade-down">
+    <div class="overlay">
+      <img src="profile.jpg" alt="Harihar Singh" class="profile-img">
+      <h1>Harihar Singh</h1>
+      <p><span id="typing"></span></p>
+      <a href="mailto:harisinghstudy@gmail.com" class="social-btn">📧 Contact Me</a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/innocent_hari____/" target="_blank" aria-label="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram Icon"> <span>@innocent_hari____</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am a B.Sc. Physics student and I work part-time as a computer trainer. I enjoy combining my analytical skills with my passion for technology.</p>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Education</h2>
+    <p>Ranchi University, Ranchi</p>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-card">Computer Training</div>
+      <div class="skill-card">MS Office</div>
+      <div class="skill-card">Basic Programming</div>
+      <div class="skill-card">Teaching & Communication</div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:harisinghstudy@gmail.com">harisinghstudy@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Harihar Singh. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const typing = document.getElementById('typing');
+    const roles = ["Student", "Computer Trainer", "Tech Enthusiast"];
+    let i = 0, j = 0, current = '', isDeleting = false;
+
+    function type() {
+      if (i < roles.length) {
+        if (!isDeleting && j <= roles[i].length) {
+          current = roles[i].substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+          current = roles[i].substring(0, j--);
+        }
+
+        typing.innerHTML = current + '<span>|</span>';
+
+        if (j === roles[i].length) isDeleting = true;
+        if (isDeleting && j === 0) {
+          isDeleting = false;
+          i = (i + 1) % roles.length;
+        }
+      }
+      setTimeout(type, isDeleting ? 60 : 120);
+    }
+
+    type();
+  </script>
+</body>
+</html>
